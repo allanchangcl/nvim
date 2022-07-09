@@ -86,10 +86,6 @@ M.on_attach = function(client, bufnr)
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false
 	end
-  if client.name == "gopls" then
-    -- Run gofmt + goimport on save
-    vim.api.nvim_exec([[ autocmd BufWritePre *.go :silent! lua require('go.format').goimport() ]], false)
-  end  
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 end
