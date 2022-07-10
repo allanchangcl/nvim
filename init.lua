@@ -22,4 +22,5 @@ require "user.whichkey"
 require "user.autocommands"
 require "user.go"
 require "user.golangcilint"
+-- require "user.typescript"
 end

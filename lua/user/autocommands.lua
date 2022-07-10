@@ -33,6 +33,11 @@ vim.cmd [[
     autocmd!
     autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()
   augroup end
+
+augroup _lsp
+  autocmd!
+  autocmd BufWritePre * lua vim.lsp.buf.formatting()
+augroup end
 ]]
 
 -- Autoformat

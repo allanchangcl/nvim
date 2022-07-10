@@ -97,6 +97,10 @@ return packer.startup(function(use)
   use 'ray-x/go.nvim'
   use 'ray-x/guihua.lua' -- recommanded if need floating window support
 
+
+  -- Typescript
+  use("jose-elias-alvarez/typescript.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
