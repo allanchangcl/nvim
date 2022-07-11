@@ -93,10 +93,6 @@ return packer.startup(function(use)
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
 
-  -- Golang
-  use 'ray-x/go.nvim'
-  use 'ray-x/guihua.lua' -- recommanded if need floating window support
-
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
