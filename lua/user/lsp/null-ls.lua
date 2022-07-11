@@ -18,6 +18,7 @@ null_ls.setup({
 		formatting.stylua,
 		diagnostics.eslint,
 		codeactions.eslint,
+		formatting.gofumpt,
     -- diagnostics.flake8
 	},
 })
