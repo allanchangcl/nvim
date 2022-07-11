@@ -13,11 +13,11 @@ local codeactions = null_ls.builtins.code_actions
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-		diagnostics.eslint,
-		codeactions.eslint,
+		diagnostics.eslint_d,
+		codeactions.eslint_d,
 		formatting.gofumpt,
     -- diagnostics.flake8
 	},
