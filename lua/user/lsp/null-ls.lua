@@ -19,6 +19,7 @@ null_ls.setup({
 		diagnostics.eslint_d,
 		codeactions.eslint_d,
 		formatting.gofumpt,
+        formatting.goimports,
     -- diagnostics.flake8
 	},
 })
