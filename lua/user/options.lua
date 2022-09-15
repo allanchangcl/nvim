@@ -41,6 +41,12 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.python_host_prog = '/home/allanchangcl/.pyenv/versions/neovim2/bin/python'
+vim.g.python3_host_prog = '/home/allanchangcl/.pyenv/versions/neovim3/bin/python'
+
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
