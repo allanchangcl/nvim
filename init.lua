@@ -1,3 +1,4 @@
+if vim.g.vscode == nil then
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -19,3 +20,4 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+end
