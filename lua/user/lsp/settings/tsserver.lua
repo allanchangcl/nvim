@@ -1,11 +1,11 @@
-local ih = require("inlay-hints")
+-- local ih = require("inlay-hints")
 -- local ih = require("lsp-inlayhints")
-local lspconfig = require("lspconfig")
+-- local lspconfig = require("lspconfig")
 
 return {
-  on_attach = function(c, b)
-    ih.on_attach(c, b)
-  end,
+  -- on_attach = function(c, b)
+    -- ih.on_attach(c, b)
+  -- end,
   settings = {
     typescript = {
       inlayHints = {
