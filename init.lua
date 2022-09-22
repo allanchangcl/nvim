@@ -20,4 +20,5 @@ if vim.g.vscode == nil then
 	require("user.alpha")
 	require("user.whichkey")
 	require("user.autocommands")
+	require("user.rust-tools")
 end
